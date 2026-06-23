@@ -1,0 +1,89 @@
+/* 
+  AIとレスキュー！モンスター召喚カードのスタイルシート
+  読点には「，」，句点には「．」を使用しています．
+*/
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 
+  【1】カード全体のコンテナ
+  TODO: AIに聞いて，カード全体のレイアウト（幅の制限，枠線，角丸，影など）を美しく整えましょう．
+*/
+.card-container {
+    background-color: #ffffff;
+    border: 3px solid #333333;
+    padding: 20px;
+    /* ここにレイアウトを整えるCSSを追加します */
+}
+
+/* 
+  【2】モンスター画像（バグ：画像が巨大化しています！）
+  TODO: 画像がカードの幅からはみ出さないように，AIに直し方を聞いてみましょう．
+*/
+.card-image {
+    width: 1200px; /* 巨大化バグの原因です */
+    height: auto;
+}
+
+.monster-name {
+    font-size: 24px;
+    margin: 15px 0 10px 0;
+    color: #111111;
+}
+
+.monster-description {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* 
+  【3】ステータスリスト
+  TODO: リスト項目が縦に並んでしまっています．
+  AIに「リストを横並びにする（Flexboxを使う）方法」を聞いて，スッキリ横並びにしましょう．
+*/
+.status-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.status-item {
+    background-color: #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* 
+  【4】召喚ボタン（初期状態：地味なデザイン）
+  TODO: AIに相談して，このボタンを魅力的なデザインに変更しましょう．
+  （背景色の変更，角丸の追加，文字を白にする，など）
+*/
+.summon-button {
+    background-color: #cccccc;
+    color: #333333;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 
+  【5】ホバーアニメーション
+  TODO: ボタンにマウスをのせたとき（ホバー）に，ふわっと浮き上がり，
+  背景色や影が変化するアニメーション効果を追加しましょう．
+*/
+/* ここにボタンがホバーした時のスタイルと，アニメーションの設定を追加します */
