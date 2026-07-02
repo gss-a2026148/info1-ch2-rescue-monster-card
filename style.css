@@ -29,7 +29,7 @@ body {
   TODO: 画像がカードの幅からはみ出さないように，AIに直し方を聞いてみましょう．
 */
 .card-image {
-    width: 1200px; /* 巨大化バグの原因です */
+    width: 80%;
     height: auto;
 }
 
